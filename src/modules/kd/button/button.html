@@ -1,0 +1,21 @@
+<template>
+  <button
+    class={computedClass}
+    disabled={disabled}
+    tabindex={tabIndex}
+    title={title}
+    variant={variant}
+    stretch={stretch}
+    onfocus={handleButtonFocus}
+    onblur={handleButtonBlur}
+    onclick={handleButtonClick}
+  >
+    <template if:true={showLeftIcon}>
+      <kd-icon icon-name={iconName} svg-class={computedIconClass}></kd-icon>
+    </template>
+    {label}
+    <template if:true={showRightIcon}>
+      <kd-icon icon-name={iconName} svg-class={computedIconClass}></kd-icon>
+    </template>
+  </button>
+</template>

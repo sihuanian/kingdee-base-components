@@ -1,0 +1,146 @@
+button {
+  cursor: pointer;
+}
+
+.kdds-button {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: var(--sds-c-button-spacing-block-start, 0);
+  padding-right: var(--sds-c-button-spacing-inline-end, 0);
+  padding-bottom: var(--sds-c-button-spacing-block-end, 0);
+  padding-left: var(--sds-c-button-spacing-inline-start, 0);
+  background: 0 0;
+  background-color: var(--sds-c-button-color-background, transparent);
+  background-clip: border-box;
+  border-color: var(--sds-c-button-color-border, transparent);
+  border-style: solid;
+  border-width: var(--sds-c-button-sizing-border, 1px);
+  border-radius: var(--sds-c-button-radius-border, .25rem);
+  -webkit-box-shadow: var(--sds-c-button-shadow);
+  box-shadow: var(--sds-c-button-shadow);
+  line-height: var(--sds-c-button-line-height, 1.875rem);
+  text-decoration: none;
+  color: var(--sds-c-button-text-color, #5582f3);
+  -webkit-appearance: none;
+  white-space: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.kdds-button_stretch {
+  width: 100%;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.kdds-button_disabled {
+  color: #b2b2b2;
+  cursor: not-allowed;
+}
+
+.kdds-button:active, .kdds-button:hover, .kdds-button:focus, .kdds-button:active {
+  text-decoration: none;
+}
+
+.kdds-button:focus, .kdds-button:hover {
+  color: var(--sds-c-button-text-color, #87adff);
+}
+
+.kdds-button_disabled.kdds-button:focus, .kdds-button_disabled.kdds-button:hover {
+  color: var(--sds-c-button-text-color, #b2b2b2);
+}
+
+.kdds-button--brand, .kdds-button_brand {
+  padding-left: var(--sds-c-button-brand-spacing-inline-start, 1rem);
+  padding-right: var(--sds-c-button-brand-spacing-inline-end, 1rem);
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: border .15s linear;
+  transition: border .15s linear;
+  background-color: var(--sds-c-button-brand-color-background, #5582f3);
+  border-color: var(--sds-c-button-brand-color-border, #5582f3);
+  color: var(--sds-c-button-brand-text-color, #fff);
+}
+
+.kdds-button--neutral, .kdds-button_neutral {
+  padding-left: var(--sds-c-button-neutral-spacing-inline-start, 1rem);
+  padding-right: var(--sds-c-button-neutral-spacing-inline-end, 1rem);
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: border .15s linear;
+  transition: border .15s linear;
+  background-color: var(--sds-c-button-neutral-color-background, transparent);
+  border-color: var(--sds-c-button-neutral-color-border, #d9d9d9);
+}
+
+.kdds-button--brand-outline, .kdds-button_brand-outline {
+  padding-left: var(--sds-c-button-brand-spacing-inline-start, 1rem);
+  padding-right: var(--sds-c-button-brand-spacing-inline-end, 1rem);
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: border .15s linear;
+  transition: border .15s linear;
+  background-color: var(--sds-c-button-brand-color-background, transparent);
+  border-color: var(--sds-c-button-brand-color-border, #5582f3);
+}
+
+.kdds-button--destructive, .kdds-button_destructive {
+  padding-left: var(--sds-c-button-brand-spacing-inline-start, 1rem);
+  padding-right: var(--sds-c-button-brand-spacing-inline-end, 1rem);
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: border .15s linear;
+  transition: border .15s linear;
+  background-color: var(--sds-c-button-brand-color-background, #fb2323);
+  border-color: var(--sds-c-button-brand-color-border, #fb2323);
+  color: var(--sds-c-button-brand-text-color, #fff);
+}
+
+.kdds-button--destructive-text, .kdds-button_destructive-text {
+  padding-left: var(--sds-c-button-brand-spacing-inline-start, 1rem);
+  padding-right: var(--sds-c-button-brand-spacing-inline-end, 1rem);
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: border .15s linear;
+  transition: border .15s linear;
+  background-color: var(--sds-c-button-brand-color-background, transparent);
+  border-color: var(--sds-c-button-brand-color-border, #fb2323);
+  color: var(--sds-c-button-brand-text-color, #fb2323);
+}
+
+.kdds-button--success, .kdds-button_success {
+  padding-left: var(--sds-c-button-brand-spacing-inline-start, 1rem);
+  padding-right: var(--sds-c-button-brand-spacing-inline-end, 1rem);
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: border .15s linear;
+  transition: border .15s linear;
+  background-color: var(--sds-c-button-brand-color-background, #1ba854);
+  border-color: var(--sds-c-button-brand-color-border, #1ba854);
+  color: var(--sds-c-button-brand-text-color, #fff);
+}

@@ -1,0 +1,48 @@
+{
+  "name": "kingdee-base-components",
+  "version": "1.0.0",
+  "description": "KWC 框架基础组件",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "NODE_ENV=production rollup -c rollup.config.js",
+    "build:components": "NODE_ENV=production rollup -c rollup.config.js",
+    "dev": "rollup -c --watch",
+    "prepublishOnly": "npm run build:components",
+    "test": "jest",
+    "lint": "eslint src/",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@kdcloudjs/kwc": "^1.0.0",
+    "lightning-base-components": "^1.27.2-alpha"
+  },
+  "files": [
+    "dist",
+    "src/modules",
+    "README.md"
+  ],
+  "kwc": {
+    "modules": [
+      {
+        "dir": "src/modules"
+      }
+    ],
+    "expose": [
+      "kd/*"
+    ]
+  },
+  "exports": {
+    "./kd/button": {
+      "import": "./dist/esm/kd/button.js",
+      "require": "./dist/cjs/kd/button.js"
+    }
+  },
+  "devDependencies": {
+    "@rollup/plugin-replace": "^6.0.2",
+    "rollup": "^4.50.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^3.0.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
