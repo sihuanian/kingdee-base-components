@@ -1,3 +1,37 @@
 <template>
   <kd-button label="按钮"></kd-button>
+  <div class="c-container">
+    <p>layout</p>
+    <kd-layout>
+      <kd-layout-item padding="around-small">
+        <div class="header-column">
+          <p class="field-title" title="Field 1">Field 1</p>
+          <p>Name</p>
+        </div>
+      </kd-layout-item>
+      <kd-layout-item padding="around-small">
+        <div class="header-column">
+          <p class="field-title" title="Field2 (3)">Field 2 (3)
+            <kd-button icon-name="utility:down" variant="border-filled" size="small"
+              alternative-text="More Actions"></kd-button>
+          </p>
+          <p>Eligibility</p>
+        </div>
+      </kd-layout-item>
+      <kd-layout-item padding="around-small">
+        <div class="header-column">
+          <p class="field-title" title="Field 3">Field 3</p>
+          <a href="#">Website</a>
+        </div>
+      </kd-layout-item>
+      <kd-layout-item padding="around-small">
+        <div class="header-column">
+          <p class="field-title" title="Field 4">Field 4</p>
+          <p>
+            <span title="">Address</span>
+          </p>
+        </div>
+      </kd-layout-item>
+    </kd-layout>
+  </div>
 </template>
