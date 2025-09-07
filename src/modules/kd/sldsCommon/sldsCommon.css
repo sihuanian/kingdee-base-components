@@ -27,8 +27,8 @@
 }
 
 :host([data-render-mode='shadow']) a {
-    color: var(--slds-s-link-color);
-    text-decoration: var(--_slds-g-font-decoration, none);
+    color: var(--kdds-s-link-color);
+    text-decoration: var(--_kdds-g-font-decoration, none);
     transition: color 0.1s linear;
     background-color: transparent;
 }
@@ -40,33 +40,33 @@
 
 :host([data-render-mode='shadow']) a:hover,
 :host([data-render-mode='shadow']) a:focus {
-    text-decoration: var(--_slds-g-font-decoration-hover, underline);
+    text-decoration: var(--_kdds-g-font-decoration-hover, underline);
     color: var(
-        --slds-g-link-color-hover,
-        var(--slds-g-color-brand-base-30, #014486)
+        --kdds-g-link-color-hover,
+        var(--kdds-g-color-brand-base-30, #014486)
     );
 }
 
 :host([data-render-mode='shadow']) a:active {
     color: var(
-        --slds-g-link-color-active,
-        var(--slds-g-color-brand-base-30, #014486)
+        --kdds-g-link-color-active,
+        var(--kdds-g-color-brand-base-30, #014486)
     );
 }
 
 :host([data-render-mode='shadow']) a:focus-visible {
     outline-color: var(
-        --_slds-g-color-outline,
-        var(--slds-g-color-brand-base-50, #0176d3)
+        --_kdds-g-color-outline,
+        var(--kdds-g-color-brand-base-50, #0176d3)
     );
 }
 
 :host([data-render-mode='shadow']) a:focus {
-    box-shadow: var(--_slds-g-shadow);
-    border-color: var(--_slds-g-color-border);
-    border-width: var(--_slds-g-sizing-border);
-    border-style: var(--_slds-g-style-border);
-    outline: var(--_slds-g-font-decoration-hover);
+    box-shadow: var(--_kdds-g-shadow);
+    border-color: var(--_kdds-g-color-border);
+    border-width: var(--_kdds-g-sizing-border);
+    border-style: var(--_kdds-g-style-border);
+    outline: var(--_kdds-g-font-decoration-hover);
 }
 
 :host([data-render-mode='shadow']) a,
@@ -131,7 +131,7 @@
 
 /* Below selectors are commented out
   because it seems to disrupt synthetic mode
-  styling but exist in SLDS-internal.
+  styling but exist in kdds-internal.
   They are added in to individual component css
   (ex. calendar.css) */
 
@@ -225,7 +225,7 @@
     display: block;
     margin: var(--sds-g-spacing-6, 2rem, 2rem) 0;
     border-top: var(--sds-g-sizing-border-1, 1px, 1px) solid
-        var(--slds-g-color-border-base-1, #c9c9c9);
+        var(--kdds-g-color-border-base-1, #c9c9c9);
     height: var(--sds-g-sizing-border-1, 1px, 1px);
     clear: both;
     box-sizing: content-box;

@@ -61,54 +61,54 @@
   vertical-align: middle;
 }
 :host([data-render-mode="shadow"][size='xxx-small']),:host([data-render-mode="shadow"]) 
-.slds-icon_xxx-small {
-  --slds-c-icon-sizing: var(--slds-g-sizing-3);
+.kdds-icon_xxx-small {
+  --kdds-c-icon-sizing: var(--kdds-g-sizing-3);
 }
 :host([data-render-mode="shadow"][size='xx-small']),:host([data-render-mode="shadow"]) 
-.slds-icon_xx-small {
-  --slds-c-icon-sizing: calc(var(--slds-g-sizing-1) + var(--slds-g-sizing-4));
+.kdds-icon_xx-small {
+  --kdds-c-icon-sizing: calc(var(--kdds-g-sizing-1) + var(--kdds-g-sizing-4));
 }
 :host([data-render-mode="shadow"][size='x-small']),:host([data-render-mode="shadow"]) 
-.slds-icon_x-small {
-  --slds-c-icon-sizing: var(--slds-g-sizing-5);
+.kdds-icon_x-small {
+  --kdds-c-icon-sizing: var(--kdds-g-sizing-5);
 }
 :host([data-render-mode="shadow"][size='small']),:host([data-render-mode="shadow"]) 
-.slds-icon_small {
-  --slds-c-icon-sizing: var(--slds-g-sizing-7);
+.kdds-icon_small {
+  --kdds-c-icon-sizing: var(--kdds-g-sizing-7);
 }
 :host([data-render-mode="shadow"][size='large']),:host([data-render-mode="shadow"]) 
-.slds-icon_large {
-  --slds-c-icon-sizing: var(--slds-g-sizing-10);
+.kdds-icon_large {
+  --kdds-c-icon-sizing: var(--kdds-g-sizing-10);
 }
 :host([data-render-mode="shadow"][variant='warning']) {
-  --slds-c-icon-color-foreground: var(--slds-g-color-warning-1);
+  --kdds-c-icon-color-foreground: var(--kdds-g-color-warning-1);
 }
 :host([data-render-mode="shadow"][variant='success']) {
-  --slds-c-icon-color-foreground: var(--slds-g-color-success-1);
+  --kdds-c-icon-color-foreground: var(--kdds-g-color-success-1);
 }
 :host([data-render-mode="shadow"][variant='error']) {
-  --slds-c-icon-color-foreground: var(--slds-g-color-error-1);
+  --kdds-c-icon-color-foreground: var(--kdds-g-color-error-1);
 }
 :host([data-render-mode="shadow"][variant='light']) {
-  --slds-c-icon-color-foreground: var(--slds-g-color-neutral-base-70);
+  --kdds-c-icon-color-foreground: var(--kdds-g-color-neutral-base-70);
 }
 :host([data-render-mode="shadow"]) [part='boundary'] {
-  /* --sds-c-icon-color-background: var(--slds-c-icon-color-background); */
-  --sds-c-icon-radius-border: var(--slds-c-icon-radius-border, var(--slds-g-radius-border-2));
-  --sds-c-icon-sizing-border: var(--slds-c-icon-sizing-border, 0);
-  --sds-c-icon-color-border: var(--slds-c-icon-color-border);
-  --sds-c-icon-spacing-block-start: var(--slds-c-icon-spacing-blockstart, var(--slds-c-icon-spacing-block));
-  --sds-c-icon-spacing-block-end: var(--slds-c-icon-spacing-blockend, var(--slds-c-icon-spacing-block));
+  /* --sds-c-icon-color-background: var(--kdds-c-icon-color-background); */
+  --sds-c-icon-radius-border: var(--kdds-c-icon-radius-border, var(--kdds-g-radius-border-2));
+  --sds-c-icon-sizing-border: var(--kdds-c-icon-sizing-border, 0);
+  --sds-c-icon-color-border: var(--kdds-c-icon-color-border);
+  --sds-c-icon-spacing-block-start: var(--kdds-c-icon-spacing-blockstart, var(--kdds-c-icon-spacing-block));
+  --sds-c-icon-spacing-block-end: var(--kdds-c-icon-spacing-blockend, var(--kdds-c-icon-spacing-block));
   --sds-c-icon-spacing-inline-start: var(
-    --slds-c-icon-spacing-inlinestart,
-    var(--slds-c-icon-spacing-inline)
+    --kdds-c-icon-spacing-inlinestart,
+    var(--kdds-c-icon-spacing-inline)
   );
-  --sds-c-icon-spacing-inline-end: var(--slds-c-icon-spacing-inlineend, var(--slds-c-icon-spacing-inline));
+  --sds-c-icon-spacing-inline-end: var(--kdds-c-icon-spacing-inlineend, var(--kdds-c-icon-spacing-inline));
 
   /**
      * There's a divergence in LBC that we have to support here: LBC splits their
      * icon implementation into two components: lightning-icon and lightning-primitive-icon.
-     * slds-icon is consumed within both with no issues except that the presence of an
+     * kdds-icon is consumed within both with no issues except that the presence of an
      * additional custom element (primitive-icon) creates an unexpected inline-level
      * element and breaks our formatting context. tl;dr, we have to reset the formatting
      * context of the boundary or else we'll inherit line-height from an ancestor and
@@ -118,26 +118,26 @@
      */
   display: inline-flex;
 }
-:host([data-render-mode="shadow"]) .slds-input__icon [part='boundary'] {
+:host([data-render-mode="shadow"]) .kdds-input__icon [part='boundary'] {
   border-style: none;
 }
 :host([data-render-mode="shadow"]) [part='icon'] {
-  --sds-c-icon-color-foreground: var(--slds-c-icon-color-foreground, var(--slds-g-color-on-accent-1));
+  --sds-c-icon-color-foreground: var(--kdds-c-icon-color-foreground, var(--kdds-g-color-on-accent-1));
   --sds-c-icon-sizing-height: var(
-    --slds-c-icon-sizing-height,
-    var(--slds-c-icon-sizing, var(--slds-g-sizing-9))
+    --kdds-c-icon-sizing-height,
+    var(--kdds-c-icon-sizing, var(--kdds-g-sizing-9))
   );
   --sds-c-icon-sizing-width: var(
-    --slds-c-icon-sizing-width,
-    var(--slds-c-icon-sizing, var(--slds-g-sizing-9))
+    --kdds-c-icon-sizing-width,
+    var(--kdds-c-icon-sizing, var(--kdds-g-sizing-9))
   );
 }
 :host([data-render-mode="shadow"][icon-name*='action']),:host([data-render-mode="shadow"]) 
-.slds-icon_container_circle {
-  --slds-c-icon-spacing-block: var(--slds-g-sizing-3);
-  --slds-c-icon-spacing-inline: var(--slds-g-sizing-3);
-  --slds-c-icon-radius-border: calc(var(--slds-g-radius-border-circle) / 2);
-  --slds-c-icon-sizing-border: var(--slds-g-sizing-3);
+.kdds-icon_container_circle {
+  --kdds-c-icon-spacing-block: var(--kdds-g-sizing-3);
+  --kdds-c-icon-spacing-inline: var(--kdds-g-sizing-3);
+  --kdds-c-icon-radius-border: calc(var(--kdds-g-radius-border-circle) / 2);
+  --kdds-c-icon-sizing-border: var(--kdds-g-sizing-3);
 }
 /**
  * P R I V A T E
@@ -158,27 +158,27 @@
  * outcome is the removal of this class and the default utility styling would
  * be implemented through an attribute or some other class-less solution.
  */
-:host([data-render-mode="shadow"]) .slds-icon {
+:host([data-render-mode="shadow"]) .kdds-icon {
   display: inline-flex;
   height: var(
-    --slds-c-icon-sizing-height,
-    var(--slds-c-icon-sizing, var(--slds-s-icon-sizing, var(--slds-g-sizing-9)))
+    --kdds-c-icon-sizing-height,
+    var(--kdds-c-icon-sizing, var(--kdds-s-icon-sizing, var(--kdds-g-sizing-9)))
   );
   width: var(
-    --slds-c-icon-sizing-width,
-    var(--slds-c-icon-sizing, var(--slds-s-icon-sizing, var(--slds-g-sizing-9)))
+    --kdds-c-icon-sizing-width,
+    var(--kdds-c-icon-sizing, var(--kdds-s-icon-sizing, var(--kdds-g-sizing-9)))
   );
-  fill: var(--slds-c-icon-color-foreground, var(--slds-g-color-neutral-base-100));
+  fill: var(--kdds-c-icon-color-foreground, var(--kdds-g-color-neutral-base-100));
 }
-:host([data-render-mode="shadow"]) .slds-icon-text-default {
+:host([data-render-mode="shadow"]) .kdds-icon-text-default {
   /*! @css-var-fallback fill */
-  --slds-c-icon-color-foreground: var(
-    --slds-c-icon-color-foreground-default,
-    var(--sds-c-icon-color-foreground-default, var(--slds-g-color-on-surface-1))
+  --kdds-c-icon-color-foreground: var(
+    --kdds-c-icon-color-foreground-default,
+    var(--sds-c-icon-color-foreground-default, var(--kdds-g-color-on-surface-1))
   );
 }
-:host([data-render-mode="shadow"]) .slds-icon-text-default.slds-is-disabled {
-  fill: var(--slds-g-color-disabled-1);
+:host([data-render-mode="shadow"]) .kdds-icon-text-default.kdds-is-disabled {
+  fill: var(--kdds-g-color-disabled-1);
 }
 /**
  * A temporarily baked-in utility class until SLDS gets a proper utility package.
@@ -187,7 +187,7 @@
  * outcome is the removal of this class and replacing the class with the SLDS
  * utility package solution.
  */
-:host([data-render-mode="shadow"]) .slds-assistive-text {
+:host([data-render-mode="shadow"]) .kdds-assistive-text {
   position: absolute !important;
   margin: -1px !important;
   border: 0 !important;
@@ -206,23 +206,23 @@
  * following design pattern:
  *
  * [type="action"][icon-name="approval"] {
- *   --sds-c-icon-color-background: var(--slds-c-icon-color-background, #111);
+ *   --sds-c-icon-color-background: var(--kdds-c-icon-color-background, #111);
  * }
  */
-:host([data-render-mode="shadow"]) .slds-icon_disabled {
+:host([data-render-mode="shadow"]) .kdds-icon_disabled {
   background-color: currentcolor;
 }
-:host([data-render-mode="shadow"]) .slds-input__icon {
-  --slds-c-icon-sizing: calc(var(--slds-g-sizing-1) + var(--slds-g-sizing-4));
+:host([data-render-mode="shadow"]) .kdds-input__icon {
+  --kdds-c-icon-sizing: calc(var(--kdds-g-sizing-1) + var(--kdds-g-sizing-4));
 
   position: absolute;
   top: 50%;
   margin-block-start: -0.4375rem;
-  line-height: var(--slds-g-font-lineheight-1);
+  line-height: var(--kdds-g-font-lineheight-1);
   border: 0;
   z-index: 2;
 }
-:host([data-render-mode="shadow"][data-input-pill-search-primicon]) .slds-icon {
+:host([data-render-mode="shadow"][data-input-pill-search-primicon]) .kdds-icon {
   --sds-c-icon-sizing-height: 1.25rem;
   --sds-c-icon-sizing-width: 1.25rem;
 }
@@ -230,12 +230,12 @@
   --sds-c-icon-color-foreground: none;
 }
 :host([data-render-mode="shadow"][data-input-pill-close-primicon]) [part='icon']:hover {
-  --sds-c-icon-color-foreground: var(--slds-g-color-accent-4);
+  --sds-c-icon-color-foreground: var(--kdds-g-color-accent-4);
 }
-:host([data-render-mode="shadow"]) .slds-icon_container {
-  border-radius: var(--slds-c-icon-radius-border, var(--slds-s-icon-radius-border));
+:host([data-render-mode="shadow"]) .kdds-icon_container {
+  border-radius: var(--kdds-c-icon-radius-border, var(--kdds-s-icon-radius-border));
   background-color: var(
-    --slds-c-icon-color-background,
-    var(--slds-s-icon-color-background, var(--sds-c-icon-color-background))
+    --kdds-c-icon-color-background,
+    var(--kdds-s-icon-color-background, var(--sds-c-icon-color-background))
   );
 }

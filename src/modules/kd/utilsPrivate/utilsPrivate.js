@@ -3,7 +3,7 @@
  * All rights reserved.
  * For full license text, see the LICENSE.txt file
  */
-import formFactor from '@salesforce/client/formFactor';
+import formFactor from '../../../../scopedImports/@salesforce-client-formFactor.js';
 import { isCSR } from './ssr';
 export * from './language';
 
@@ -391,9 +391,9 @@ export const BUTTON_GROUP_ORDER = {
  */
 export function buttonGroupOrderClass(groupOrder) {
     return {
-        [BUTTON_GROUP_ORDER.FIRST]: 'slds-button_first',
-        [BUTTON_GROUP_ORDER.MIDDLE]: 'slds-button_middle',
-        [BUTTON_GROUP_ORDER.LAST]: 'slds-button_last',
+        [BUTTON_GROUP_ORDER.FIRST]: 'kdds-button_first',
+        [BUTTON_GROUP_ORDER.MIDDLE]: 'kdds-button_middle',
+        [BUTTON_GROUP_ORDER.LAST]: 'kdds-button_last',
         [BUTTON_GROUP_ORDER.ONLY]: 'single-button',
     }[groupOrder];
 }

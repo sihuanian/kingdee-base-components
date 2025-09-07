@@ -61,7 +61,7 @@ export default (args) => {
       args.watch &&
       serve({
         open: false,
-        port: 3010
+        port: 3011
       }),
       args.watch && livereload('dist'),
       // 复制静态资源

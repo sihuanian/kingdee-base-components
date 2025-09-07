@@ -23,15 +23,15 @@ const PADDING = [
     'around-large',
 ];
 const PADDING_CLASS = {
-    'slds-p-right_small': 'horizontal-small',
-    'slds-p-left_small': 'horizontal-small',
-    'slds-p-right_medium': 'horizontal-medium',
-    'slds-p-left_medium': 'horizontal-medium',
-    'slds-p-right_large': 'horizontal-large',
-    'slds-p-left_large': 'horizontal-large',
-    'slds-p-around_small': 'around-small',
-    'slds-p-around_medium': 'around-medium',
-    'slds-p-around_large': 'around-large',
+    'kdds-p-right_small': 'horizontal-small',
+    'kdds-p-left_small': 'horizontal-small',
+    'kdds-p-right_medium': 'horizontal-medium',
+    'kdds-p-left_medium': 'horizontal-medium',
+    'kdds-p-right_large': 'horizontal-large',
+    'kdds-p-left_large': 'horizontal-large',
+    'kdds-p-around_small': 'around-small',
+    'kdds-p-around_medium': 'around-medium',
+    'kdds-p-around_large': 'around-large',
 };
 const FLEXIBILITY = [
     'auto',
@@ -42,18 +42,18 @@ const FLEXIBILITY = [
     'no-flex',
 ];
 const FLEX_CLASS = {
-    'slds-col': 'auto',
-    'slds-grow': 'grow',
-    'slds-shrink': 'shrink',
-    'slds-grow-none': 'no-grow',
-    'slds-shrink-none': 'no-shrink',
-    'slds-no-flex': 'no-flex',
+    'kdds-col': 'auto',
+    'kdds-grow': 'grow',
+    'kdds-shrink': 'shrink',
+    'kdds-grow-none': 'no-grow',
+    'kdds-shrink-none': 'no-shrink',
+    'kdds-no-flex': 'no-flex',
 };
 const SIZE_CLASS = {
-    default: 'slds-size_',
-    small: 'slds-small-size_',
-    medium: 'slds-medium-size_',
-    large: 'slds-large-size_',
+    default: 'kdds-size_',
+    small: 'kdds-small-size_',
+    medium: 'kdds-medium-size_',
+    large: 'kdds-large-size_',
 };
 
 const DIRECTION = ['left', 'top', 'right', 'bottom'];
@@ -163,7 +163,7 @@ function computeBumpClass(direction, computedClass) {
     computedClass = computedClass || classSet();
     direction = direction || '';
     if (direction !== '') {
-        computedClass.add(`slds-col_bump-${direction}`);
+        computedClass.add(`kdds-col_bump-${direction}`);
     }
     return computedClass;
 }

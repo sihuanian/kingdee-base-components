@@ -3,7 +3,7 @@
  * All rights reserved.
  * For full license text, see the LICENSE.txt file
  */
-import { isValidISODateTimeString } from 'lightning/iso8601Utils';
+import { isValidISODateTimeString } from '../iso8601Utils/iso8601Utils'
 
 const MAX_LONGITUDE = 180.0;
 const MAX_LATITUDE = 90.0;

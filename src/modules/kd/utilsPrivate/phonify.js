@@ -3,7 +3,7 @@
  * All rights reserved.
  * For full license text, see the LICENSE.txt file
  */
-import locale from '@salesforce/i18n/locale';
+import locale from '../../../../scopedImports/@salesforce-i18n-locale.js';
 
 const NA_PHONE_NUMBER = '($1) $2-$3';
 const IS_TEN_DIGITS = /^\d{10}$/;

@@ -31,34 +31,34 @@
 }
 
 /* TODO: change the following classes to the actual SLDS classes once W-12084169 is completed. */
-.fix-slds-notify--mobile,
-:host([data-render-mode='shadow']) .fix-slds-notify--mobile {
+.fix-kdds-notify--mobile,
+:host([data-render-mode='shadow']) .fix-kdds-notify--mobile {
     padding: 0.5rem 1rem 0.75rem;
     min-width: 90%;
     width: 90%;
 }
 
-.fix-slds-notify--mobile.slds-notify_toast h2,
+.fix-kdds-notify--mobile.kdds-notify_toast h2,
 :host([data-render-mode='shadow'])
-    .fix-slds-notify--mobile.slds-notify_toast
+    .fix-kdds-notify--mobile.kdds-notify_toast
     h2 {
-    font-size: var(--slds-g-font-size-base, 0.8125rem);
-    font-weight: var(--slds-g-font-weight-3, 300);
+    font-size: var(--kdds-g-font-size-base, 0.8125rem);
+    font-weight: var(--kdds-g-font-weight-3, 300);
 }
 
 /* for screen smaller than 480px */
-.fix-slds-notify--mobile .slds-notify__close,
+.fix-kdds-notify--mobile .kdds-notify__close,
 :host([data-render-mode='shadow'])
-    .fix-slds-notify--mobile
-    .slds-notify__close {
+    .fix-kdds-notify--mobile
+    .kdds-notify__close {
     top: 0.5rem;
 }
 
 /* for mobile device */
-.fix-slds-notify--mobile .slds-notify__close.fix-slds-notify--mobile__close,
+.fix-kdds-notify--mobile .kdds-notify__close.fix-kdds-notify--mobile__close,
 :host([data-render-mode='shadow'])
-    .fix-slds-notify--mobile
-    .slds-notify__close.fix-slds-notify--mobile__close {
+    .fix-kdds-notify--mobile
+    .kdds-notify__close.fix-kdds-notify--mobile__close {
     top: -0.25rem;
     right: -0.15rem;
 }

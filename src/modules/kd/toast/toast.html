@@ -1,29 +1,29 @@
 <template>
     <lightning-focus-trap>
-        <div class="slds-notify_container slds-is-relative" part="toast" role="alert" aria-live="polite" aria-atomic="true">
+        <div class="kdds-notify_container kdds-is-relative" part="toast" role="alert" aria-live="polite" aria-atomic="true">
             <div class={toastClass}
                 onanimationend={handleAnimationEnd}
                 onfocusin={handleFocusIn}
                 onfocusout={handleFocusOut}>
-                <div class="slds-list--inline"
+                <div class="kdds-list--inline"
                     data-content
                     tabindex="0">
                     <template if:true={isSmallerBrowserWidth}>
-                        <span class="slds-assistive-text">
+                        <span class="kdds-assistive-text">
                             {iconAlternativeText}
                         </span>
                     </template>
                     <template if:false={isSmallerBrowserWidth}>
                         <lightning-icon
-                            class="slds-m-right_small slds-no-flex slds-align-top"
+                            class="kdds-m-right_small kdds-no-flex kdds-align-top"
                             icon-name={iconName}
                             size="small"
                             variant="inverse"
                             alternative-text={iconAlternativeText}>
                         </lightning-icon>
                     </template>
-                    <div class="slds-notify__content">
-                        <h2 class="slds-text-heading_small">
+                    <div class="kdds-notify__content">
+                        <h2 class="kdds-text-heading_small">
                             <slot>
                                 <template if:true={hasLabelLink}>
                                     <lightning-formatted-rich-text
@@ -48,7 +48,7 @@
                             </slot>
                         </template>
                         <template if:true={assistiveText}>
-                            <span class="slds-assistive-text">
+                            <span class="kdds-assistive-text">
                                 {assistiveText}
                             </span>
                         </template>

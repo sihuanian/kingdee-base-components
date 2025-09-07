@@ -169,7 +169,7 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
   --sds-c-button-shadow: var(--sds-c-button-shadow-pressed, revert);
 }
 /*******************************************
-* Imported dependency from @salesforce-ux/slds-button/button.css
+* Imported dependency from @salesforce-ux/kdds-button/button.css
 *******************************************/
 /**
   * LBC default is the 'neutral' variant.
@@ -183,22 +183,22 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
   */
 :host([data-render-mode="shadow"]) [part~='button'] {
   /* Element spacing, display flex set by SDS button */
-  gap: var(--slds-g-spacing-2);
+  gap: var(--kdds-g-spacing-2);
 
-  /* slds-icon mapping */
-  --slds-c-icon-sizing-border: 0;
-  --slds-c-icon-sizing: 0.875rem;
-  --slds-c-icon-color-foreground: currentcolor;
+  /* kdds-icon mapping */
+  --kdds-c-icon-sizing-border: 0;
+  --kdds-c-icon-sizing: 0.875rem;
+  --kdds-c-icon-color-foreground: currentcolor;
 
   --sds-c-button-font-lineheight: var(
-    --slds-c-button-neutral-font-lineheight,
-    var(--slds-s-button-font-lineheight, 1.875rem)
+    --kdds-c-button-neutral-font-lineheight,
+    var(--kdds-s-button-font-lineheight, 1.875rem)
   );
   --sds-c-button-spacing-inline: var(
-    --slds-c-button-neutral-spacing-inline,
-    var(--slds-s-button-spacing-inline, var(--slds-g-spacing-4)) ;
+    --kdds-c-button-neutral-spacing-inline,
+    var(--kdds-s-button-spacing-inline, var(--kdds-g-spacing-4)) ;
   );
-  --sds-c-button-spacing-block: var(--slds-c-button-neutral-spacing-block);
+  --sds-c-button-spacing-block: var(--kdds-c-button-neutral-spacing-block);
 
   /**
     * A note about fallbacks on the default variant:
@@ -218,94 +218,94 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
 
   /* Border radius - shared */
   --sds-c-button-radius-border-startstart: var(
-    --slds-c-button-radius-border-startstart,
+    --kdds-c-button-radius-border-startstart,
     var(
-      --slds-c-button-radius-border,
-      var(--slds-s-button-radius-border-startstart, var(--slds-s-button-radius-border))
+      --kdds-c-button-radius-border,
+      var(--kdds-s-button-radius-border-startstart, var(--kdds-s-button-radius-border))
     )
   );
 
   --sds-c-button-radius-border-endstart: var(
-    --slds-c-button-radius-border-endstart,
+    --kdds-c-button-radius-border-endstart,
     var(
-      --slds-c-button-radius-border,
-      var(--slds-s-button-radius-border-endstart, var(--slds-s-button-radius-border))
+      --kdds-c-button-radius-border,
+      var(--kdds-s-button-radius-border-endstart, var(--kdds-s-button-radius-border))
     )
   );
 
   --sds-c-button-radius-border-startend: var(
-    --slds-c-button-radius-border-startend,
+    --kdds-c-button-radius-border-startend,
     var(
-      --slds-c-button-radius-border,
-      var(--slds-s-button-radius-border-startend, var(--slds-s-button-radius-border))
+      --kdds-c-button-radius-border,
+      var(--kdds-s-button-radius-border-startend, var(--kdds-s-button-radius-border))
     )
   );
 
   --sds-c-button-radius-border-endend: var(
-    --slds-c-button-radius-border-endend,
+    --kdds-c-button-radius-border-endend,
     var(
-      --slds-c-button-radius-border,
-      var(--slds-s-button-radius-border-endend, var(--slds-s-button-radius-border))
+      --kdds-c-button-radius-border,
+      var(--kdds-s-button-radius-border-endend, var(--kdds-s-button-radius-border))
     )
   );
 
   /* Background color */
   --sds-c-button-color-background: var(
-    --slds-c-button-neutral-color-background,
-    var(--slds-g-color-surface-container-1)
+    --kdds-c-button-neutral-color-background,
+    var(--kdds-g-color-surface-container-1)
   );
   --sds-c-button-color-background-hover: var(
-    --slds-c-button-neutral-color-background-hover,
-    var(--slds-g-color-surface-container-2)
+    --kdds-c-button-neutral-color-background-hover,
+    var(--kdds-g-color-surface-container-2)
   );
   --sds-c-button-color-background-focus: var(
-    --slds-c-button-neutral-color-background-focus,
-    var(--slds-g-color-surface-container-2)
+    --kdds-c-button-neutral-color-background-focus,
+    var(--kdds-g-color-surface-container-2)
   );
   --sds-c-button-color-background-active: var(
-    --slds-c-button-neutral-color-background-active,
-    var(--slds-g-color-surface-container-2)
+    --kdds-c-button-neutral-color-background-active,
+    var(--kdds-g-color-surface-container-2)
   );
 
   /* Border color */
-  --sds-c-button-color-border: var(--slds-c-button-neutral-color-border, var(--slds-g-color-border-2));
+  --sds-c-button-color-border: var(--kdds-c-button-neutral-color-border, var(--kdds-g-color-border-2));
   --sds-c-button-color-border-hover: var(
-    --slds-c-button-neutral-color-border-hover,
-    var(--slds-g-color-border-2)
+    --kdds-c-button-neutral-color-border-hover,
+    var(--kdds-g-color-border-2)
   );
   --sds-c-button-color-border-focus: var(
-    --slds-c-button-neutral-color-border-focus,
-    var(--slds-g-color-border-2)
+    --kdds-c-button-neutral-color-border-focus,
+    var(--kdds-g-color-border-2)
   );
   --sds-c-button-color-border-active: var(
-    --slds-c-button-neutral-color-border-active,
-    var(--slds-g-color-border-2)
+    --kdds-c-button-neutral-color-border-active,
+    var(--kdds-g-color-border-2)
   );
 
   /* Text color */
-  --sds-c-button-text-color: var(--slds-c-button-neutral-text-color, var(--slds-g-color-accent-2));
+  --sds-c-button-text-color: var(--kdds-c-button-neutral-text-color, var(--kdds-g-color-accent-2));
   --sds-c-button-text-color-hover: var(
-    --slds-c-button-neutral-text-color-hover,
-    var(--slds-s-button-color-hover, var(--slds-g-color-accent-3))
+    --kdds-c-button-neutral-text-color-hover,
+    var(--kdds-s-button-color-hover, var(--kdds-g-color-accent-3))
   );
   --sds-c-button-text-color-focus: var(
-    --slds-c-button-neutral-text-color-focus,
-    var(--slds-g-color-accent-3)
+    --kdds-c-button-neutral-text-color-focus,
+    var(--kdds-g-color-accent-3)
   );
   --sds-c-button-text-color-active: var(
-    --slds-c-button-neutral-text-color-active,
-    var(--slds-g-color-accent-3)
+    --kdds-c-button-neutral-text-color-active,
+    var(--kdds-g-color-accent-3)
   );
 
   /* Shadow */
-  --sds-c-button-shadow: var(--slds-c-button-neutral-shadow);
-  --sds-c-button-shadow-focus: var(--slds-c-button-neutral-shadow-focus);
+  --sds-c-button-shadow: var(--kdds-c-button-neutral-shadow);
+  --sds-c-button-shadow-focus: var(--kdds-c-button-neutral-shadow-focus);
 }
 /* Overriding primitiveBaseButton */
 :host([data-render-mode="shadow"]) [part~='button']:disabled {
-  --sds-c-button-color-border-disabled: var(--slds-g-color-border-disabled-1);
-  --sds-c-button-text-color-disabled: var(--slds-g-color-on-disabled-1);
-  --sds-c-button-color-background-disabled: var(--slds-g-color-disabled-container-1);
+  --sds-c-button-color-border-disabled: var(--kdds-g-color-border-disabled-1);
+  --sds-c-button-text-color-disabled: var(--kdds-g-color-on-disabled-1);
+  --sds-c-button-color-background-disabled: var(--kdds-g-color-disabled-container-1);
 
   /** 
     * Needed to override 
@@ -331,116 +331,116 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
   * In all other variants, it is ok to use the previous state as a fallback value.
 */
 :host([data-render-mode="shadow"][variant='brand']) [part~='button'] {
-  --slds-c-button-neutral-color-background: var(
-    --slds-c-button-brand-color-background,
-    var(--slds-g-color-accent-container-1)
+  --kdds-c-button-neutral-color-background: var(
+    --kdds-c-button-brand-color-background,
+    var(--kdds-g-color-accent-container-1)
   );
-  --slds-c-button-neutral-color-background-hover: var(
-    --slds-c-button-brand-color-background-hover,
-    var(--slds-g-color-accent-container-2)
+  --kdds-c-button-neutral-color-background-hover: var(
+    --kdds-c-button-brand-color-background-hover,
+    var(--kdds-g-color-accent-container-2)
   );
-  --slds-c-button-neutral-color-background-focus: var(
-    --slds-c-button-brand-color-background-focus,
-    var(--slds-g-color-accent-container-2)
+  --kdds-c-button-neutral-color-background-focus: var(
+    --kdds-c-button-brand-color-background-focus,
+    var(--kdds-g-color-accent-container-2)
   );
-  --slds-c-button-neutral-color-background-active: var(
-    --slds-c-button-brand-color-background-active,
-    var(--slds-g-color-accent-container-2)
+  --kdds-c-button-neutral-color-background-active: var(
+    --kdds-c-button-brand-color-background-active,
+    var(--kdds-g-color-accent-container-2)
   );
 
-  --slds-c-button-neutral-color-border: var(
-    --slds-c-button-brand-color-border,
-    var(--slds-g-color-border-accent-1)
+  --kdds-c-button-neutral-color-border: var(
+    --kdds-c-button-brand-color-border,
+    var(--kdds-g-color-border-accent-1)
   );
-  --slds-c-button-neutral-color-border-hover: var(
-    --slds-c-button-brand-color-border-hover,
-    var(--slds-g-color-border-accent-2)
+  --kdds-c-button-neutral-color-border-hover: var(
+    --kdds-c-button-brand-color-border-hover,
+    var(--kdds-g-color-border-accent-2)
   );
-  --slds-c-button-neutral-color-border-focus: var(
-    --slds-c-button-brand-color-border-focus,
-    var(--slds-g-color-border-accent-2)
+  --kdds-c-button-neutral-color-border-focus: var(
+    --kdds-c-button-brand-color-border-focus,
+    var(--kdds-g-color-border-accent-2)
   );
-  --slds-c-button-neutral-color-border-active: var(
-    --slds-c-button-brand-color-border-active,
-    var(--slds-g-color-border-accent-2)
+  --kdds-c-button-neutral-color-border-active: var(
+    --kdds-c-button-brand-color-border-active,
+    var(--kdds-g-color-border-accent-2)
   );
 
   /* Since the text color is white for all states, bypassing inheritence and setting the color value from SDS */
-  --sds-c-button-text-color: var(--slds-c-button-brand-text-color, var(--slds-g-color-on-accent-1));
+  --sds-c-button-text-color: var(--kdds-c-button-brand-text-color, var(--kdds-g-color-on-accent-1));
 }
 :host([data-render-mode="shadow"][variant='brand-outline']) [part~='button'] {
-  --slds-c-button-neutral-color-border: var(--slds-g-color-border-accent-2);
-  --slds-c-button-neutral-color-border-hover: var(--slds-g-color-border-accent-2);
-  --slds-c-button-neutral-color-border-focus: var(--slds-g-color-border-accent-2);
-  --slds-c-button-neutral-color-border-active: var(--slds-g-color-border-accent-2);
+  --kdds-c-button-neutral-color-border: var(--kdds-g-color-border-accent-2);
+  --kdds-c-button-neutral-color-border-hover: var(--kdds-g-color-border-accent-2);
+  --kdds-c-button-neutral-color-border-focus: var(--kdds-g-color-border-accent-2);
+  --kdds-c-button-neutral-color-border-active: var(--kdds-g-color-border-accent-2);
 }
 :host([data-render-mode="shadow"][variant='inverse']) [part~='button'] {
-  --slds-c-button-neutral-color-background: transparent;
-  --slds-c-button-neutral-color-background-hover: var(--slds-g-color-surface-container-2);
-  --slds-c-button-neutral-color-background-focus: var(--slds-g-color-surface-container-2);
-  --slds-c-button-neutral-color-background-active: var(--slds-g-color-surface-container-2);
-  --slds-c-button-neutral-color-border: var(--slds-g-color-neutral-base-100);
-  --slds-c-button-neutral-color-border-hover: var(--slds-g-color-neutral-base-100);
-  --slds-c-button-neutral-color-border-focus: var(--slds-g-color-neutral-base-100);
-  --slds-c-button-neutral-color-border-active: var(--slds-g-color-neutral-base-100);
-  --slds-c-button-neutral-text-color: var(--slds-g-color-on-accent-1);
-  --slds-c-button-neutral-text-color-hover: var(--slds-g-color-accent-2);
-  --slds-c-button-neutral-text-color-active: var(--slds-g-color-accent-2);
+  --kdds-c-button-neutral-color-background: transparent;
+  --kdds-c-button-neutral-color-background-hover: var(--kdds-g-color-surface-container-2);
+  --kdds-c-button-neutral-color-background-focus: var(--kdds-g-color-surface-container-2);
+  --kdds-c-button-neutral-color-background-active: var(--kdds-g-color-surface-container-2);
+  --kdds-c-button-neutral-color-border: var(--kdds-g-color-neutral-base-100);
+  --kdds-c-button-neutral-color-border-hover: var(--kdds-g-color-neutral-base-100);
+  --kdds-c-button-neutral-color-border-focus: var(--kdds-g-color-neutral-base-100);
+  --kdds-c-button-neutral-color-border-active: var(--kdds-g-color-neutral-base-100);
+  --kdds-c-button-neutral-text-color: var(--kdds-g-color-on-accent-1);
+  --kdds-c-button-neutral-text-color-hover: var(--kdds-g-color-accent-2);
+  --kdds-c-button-neutral-text-color-active: var(--kdds-g-color-accent-2);
 }
 :host([data-render-mode="shadow"][variant='inverse']) [part~='button']:disabled {
   --sds-c-button-color-background: transparent;
-  --sds-c-button-color-border: var(--slds-g-color-border-disabled-2);
-  --sds-c-button-text-color: var(--slds-g-color-disabled-2);
+  --sds-c-button-color-border: var(--kdds-g-color-border-disabled-2);
+  --sds-c-button-text-color: var(--kdds-g-color-disabled-2);
 }
 :host([data-render-mode="shadow"][variant='destructive']) [part~='button'] {
-  --slds-c-button-neutral-color-background: var(--slds-g-color-error-container-1);
-  --slds-c-button-neutral-color-background-hover: var(--slds-g-color-error-container-2);
-  --slds-c-button-neutral-color-background-focus: var(--slds-g-color-error-container-2);
-  --slds-c-button-neutral-color-background-active: var(--slds-g-color-error-container-2);
-  --slds-c-button-neutral-color-border: var(--slds-g-color-border-error-1);
-  --slds-c-button-neutral-color-border-hover: var(--slds-g-color-border-error-2);
-  --slds-c-button-neutral-color-border-focus: var(--slds-g-color-border-error-2);
-  --slds-c-button-neutral-color-border-active: var(--slds-g-color-border-error-2);
+  --kdds-c-button-neutral-color-background: var(--kdds-g-color-error-container-1);
+  --kdds-c-button-neutral-color-background-hover: var(--kdds-g-color-error-container-2);
+  --kdds-c-button-neutral-color-background-focus: var(--kdds-g-color-error-container-2);
+  --kdds-c-button-neutral-color-background-active: var(--kdds-g-color-error-container-2);
+  --kdds-c-button-neutral-color-border: var(--kdds-g-color-border-error-1);
+  --kdds-c-button-neutral-color-border-hover: var(--kdds-g-color-border-error-2);
+  --kdds-c-button-neutral-color-border-focus: var(--kdds-g-color-border-error-2);
+  --kdds-c-button-neutral-color-border-active: var(--kdds-g-color-border-error-2);
 
   /* Since the text color is white for all states, bypassing inheritence and setting the color value from SDS */
-  --sds-c-button-text-color: var(--slds-g-color-on-error-1);
+  --sds-c-button-text-color: var(--kdds-g-color-on-error-1);
 }
 :host([data-render-mode="shadow"][variant='success']) [part~='button'] {
-  --slds-c-button-neutral-color-background: var(--slds-g-color-success-container-1);
-  --slds-c-button-neutral-color-background-hover: var(--slds-g-color-success-container-2);
-  --slds-c-button-neutral-color-background-focus: var(--slds-g-color-success-container-2);
-  --slds-c-button-neutral-color-background-active: var(--slds-g-color-success-container-2);
-  --slds-c-button-neutral-color-border: var(--slds-g-color-border-success-1);
-  --slds-c-button-neutral-color-border-hover: var(--slds-g-color-border-success-2);
-  --slds-c-button-neutral-color-border-focus: var(--slds-g-color-border-success-2);
-  --slds-c-button-neutral-color-border-active: var(--slds-g-color-border-success-2);
-  --slds-c-button-neutral-text-color: var(--slds-g-color-on-success-1);
-  --slds-c-button-neutral-text-color-hover: var(--slds-g-color-on-success-1);
-  --slds-c-button-neutral-text-color-focus: var(--slds-g-color-on-success-1);
-  --slds-c-button-neutral-text-color-active: var(--slds-g-color-on-success-1);
+  --kdds-c-button-neutral-color-background: var(--kdds-g-color-success-container-1);
+  --kdds-c-button-neutral-color-background-hover: var(--kdds-g-color-success-container-2);
+  --kdds-c-button-neutral-color-background-focus: var(--kdds-g-color-success-container-2);
+  --kdds-c-button-neutral-color-background-active: var(--kdds-g-color-success-container-2);
+  --kdds-c-button-neutral-color-border: var(--kdds-g-color-border-success-1);
+  --kdds-c-button-neutral-color-border-hover: var(--kdds-g-color-border-success-2);
+  --kdds-c-button-neutral-color-border-focus: var(--kdds-g-color-border-success-2);
+  --kdds-c-button-neutral-color-border-active: var(--kdds-g-color-border-success-2);
+  --kdds-c-button-neutral-text-color: var(--kdds-g-color-on-success-1);
+  --kdds-c-button-neutral-text-color-hover: var(--kdds-g-color-on-success-1);
+  --kdds-c-button-neutral-text-color-focus: var(--kdds-g-color-on-success-1);
+  --kdds-c-button-neutral-text-color-active: var(--kdds-g-color-on-success-1);
 }
 :host([data-render-mode="shadow"][variant='destructive-text']) [part~='button'] {
-  --slds-c-button-neutral-text-color: var(--slds-g-color-error-1);
-  --slds-c-button-neutral-text-color-hover: var(--slds-g-color-error-1);
-  --slds-c-button-neutral-text-color-focus: var(--slds-g-color-error-1);
-  --slds-c-button-neutral-text-color-active: var(--slds-g-color-error-1);
-  --slds-c-button-neutral-color-border-hover: var(
-    --slds-c-button-neutral-color-border,
-    var(--slds-g-color-border-1)
+  --kdds-c-button-neutral-text-color: var(--kdds-g-color-error-1);
+  --kdds-c-button-neutral-text-color-hover: var(--kdds-g-color-error-1);
+  --kdds-c-button-neutral-text-color-focus: var(--kdds-g-color-error-1);
+  --kdds-c-button-neutral-text-color-active: var(--kdds-g-color-error-1);
+  --kdds-c-button-neutral-color-border-hover: var(
+    --kdds-c-button-neutral-color-border,
+    var(--kdds-g-color-border-1)
   );
-  --slds-c-button-neutral-color-border-focus: var(
-    --slds-c-button-neutral-color-border,
-    var(--slds-g-color-border-1)
+  --kdds-c-button-neutral-color-border-focus: var(
+    --kdds-c-button-neutral-color-border,
+    var(--kdds-g-color-border-1)
   );
-  --slds-c-button-neutral-color-border-active: var(
-    --slds-c-button-neutral-color-border,
-    var(--slds-g-color-border-1)
+  --kdds-c-button-neutral-color-border-active: var(
+    --kdds-c-button-neutral-color-border,
+    var(--kdds-g-color-border-1)
   );
 }
 :host([data-render-mode="shadow"][variant='brand']) [part~='button']:disabled,:host([data-render-mode="shadow"][variant='success']) [part~='button']:disabled,:host([data-render-mode="shadow"][variant='destructive']) [part~='button']:disabled {
-  --sds-c-button-color-background: var(--slds-g-color-disabled-container-2);
-  --sds-c-button-color-border: var(--slds-g-color-border-disabled-1);
-  --sds-c-button-text-color: var(--slds-g-color-on-disabled-2);
+  --sds-c-button-color-background: var(--kdds-g-color-disabled-container-2);
+  --sds-c-button-color-border: var(--kdds-g-color-border-disabled-1);
+  --sds-c-button-text-color: var(--kdds-g-color-on-disabled-2);
 }
 /**
    * 'base' variant is not the default in LBC. It is the default in the light
@@ -450,22 +450,22 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
    * for this variant are written as the default for interoperability with
    * SLDS light DOM.
    *
-   * E.g. --slds-c-button-color-background
+   * E.g. --kdds-c-button-color-background
 */
 /**
   * text variant is for button-stateful
 */
 :host([data-render-mode="shadow"][variant='base']) [part~='button'],:host([data-render-mode="shadow"][variant='text']) [part~='button'] {
   --sds-c-button-spacing-inline: 0;
-  --slds-c-button-neutral-text-color: var(--slds-g-color-accent-2);
-  --slds-c-button-neutral-color-border: transparent;
-  --slds-c-button-neutral-color-border-hover: transparent;
-  --slds-c-button-neutral-color-border-focus: transparent;
-  --slds-c-button-neutral-color-border-active: var(--slds-g-color-border-accent-2);
-  --slds-c-button-neutral-color-background: transparent;
-  --slds-c-button-neutral-color-background-hover: transparent;
-  --slds-c-button-neutral-color-background-focus: transparent;
-  --slds-c-button-neutral-color-background-active: transparent;
+  --kdds-c-button-neutral-text-color: var(--kdds-g-color-accent-2);
+  --kdds-c-button-neutral-color-border: transparent;
+  --kdds-c-button-neutral-color-border-hover: transparent;
+  --kdds-c-button-neutral-color-border-focus: transparent;
+  --kdds-c-button-neutral-color-border-active: var(--kdds-g-color-border-accent-2);
+  --kdds-c-button-neutral-color-background: transparent;
+  --kdds-c-button-neutral-color-background-hover: transparent;
+  --kdds-c-button-neutral-color-background-focus: transparent;
+  --kdds-c-button-neutral-color-background-active: transparent;
 }
 :host([data-render-mode="shadow"][variant='base']) [part~='button']:disabled,:host([data-render-mode="shadow"][variant='text']) [part~='button']:disabled {
   --sds-c-button-color-background: transparent;
@@ -510,7 +510,7 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
  * outcome is the removal of this class and replacing the class with the SLDS
  * utility package solution.
  */
-:host([data-render-mode="shadow"]) .slds-assistive-text {
+:host([data-render-mode="shadow"]) .kdds-assistive-text {
   position: absolute !important;
   margin: -1px !important;
   border: 0 !important;
@@ -522,7 +522,7 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
   text-transform: none !important;
   white-space: nowrap !important;
 }
-:host([data-render-mode="shadow"]) .slds-button_reset {
+:host([data-render-mode="shadow"]) .kdds-button_reset {
   font-size: inherit;
   color: inherit;
   line-height: inherit;
@@ -539,49 +539,49 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
 :host([data-render-mode="shadow"]) [part~='button-icon'] {
   display: inline-flex;
 
-  /* slds-icon mapping */
-  --slds-c-icon-sizing-border: 0;
-  --slds-c-icon-sizing: 0.875rem;
-  --slds-c-icon-color-foreground: var(--slds-c-buttonicon-color-foreground, var(--slds-g-color-on-surface-1));
+  /* kdds-icon mapping */
+  --kdds-c-icon-sizing-border: 0;
+  --kdds-c-icon-sizing: 0.875rem;
+  --kdds-c-icon-color-foreground: var(--kdds-c-buttonicon-color-foreground, var(--kdds-g-color-on-surface-1));
 
   /* Dimensions */
   --sds-c-button-spacing-inline: 0;
-  --sds-c-button-sizing-height: var(--slds-g-sizing-9);
-  --sds-c-button-sizing-width: var(--slds-g-sizing-9);
+  --sds-c-button-sizing-height: var(--kdds-g-sizing-9);
+  --sds-c-button-sizing-width: var(--kdds-g-sizing-9);
 
   /* Background */
-  --slds-c-button-neutral-color-background: transparent;
-  --slds-c-button-neutral-color-background-hover: transparent;
-  --slds-c-button-neutral-color-background-focus: transparent;
-  --slds-c-button-neutral-color-background-active: transparent;
+  --kdds-c-button-neutral-color-background: transparent;
+  --kdds-c-button-neutral-color-background-hover: transparent;
+  --kdds-c-button-neutral-color-background-focus: transparent;
+  --kdds-c-button-neutral-color-background-active: transparent;
 
   /* Border */
-  --slds-c-button-neutral-color-border: var(--slds-g-color-border-2);
-  --slds-c-button-neutral-color-border-hover: var(--slds-g-color-border-2);
-  --slds-c-button-neutral-color-border-focus: var(--slds-g-color-border-2);
-  --slds-c-button-neutral-color-border-active: var(--slds-g-color-border-2);
+  --kdds-c-button-neutral-color-border: var(--kdds-g-color-border-2);
+  --kdds-c-button-neutral-color-border-hover: var(--kdds-g-color-border-2);
+  --kdds-c-button-neutral-color-border-focus: var(--kdds-g-color-border-2);
+  --kdds-c-button-neutral-color-border-active: var(--kdds-g-color-border-2);
 
   /* Disabled */
-  --sds-c-button-color-background-disabled: var(--slds-g-color-surface-container-1);
-  --sds-c-button-color-border-disabled: var(--slds-g-color-border-disabled-1);
+  --sds-c-button-color-background-disabled: var(--kdds-g-color-surface-container-1);
+  --sds-c-button-color-border-disabled: var(--kdds-g-color-border-disabled-1);
 }
-/* slds-icon interaction states */
+/* kdds-icon interaction states */
 :host([data-render-mode="shadow"]) [part~='button-icon']:hover {
-  --slds-c-icon-color-foreground: var(
-    --slds-c-buttonicon-color-foreground-hover,
-    var(--slds-g-color-accent-3)
+  --kdds-c-icon-color-foreground: var(
+    --kdds-c-buttonicon-color-foreground-hover,
+    var(--kdds-g-color-accent-3)
   );
 }
 :host([data-render-mode="shadow"]) [part~='button-icon']:focus {
-  --slds-c-icon-color-foreground: var(
-    --slds-c-buttonicon-color-foreground-focus,
-    var(--slds-g-color-accent-3)
+  --kdds-c-icon-color-foreground: var(
+    --kdds-c-buttonicon-color-foreground-focus,
+    var(--kdds-g-color-accent-3)
   );
 }
 :host([data-render-mode="shadow"]) [part~='button-icon']:active {
-  --slds-c-icon-color-foreground: var(
-    --slds-c-buttonicon-color-foreground-active,
-    var(--slds-g-color-accent-3)
+  --kdds-c-icon-color-foreground: var(
+    --kdds-c-buttonicon-color-foreground-active,
+    var(--kdds-g-color-accent-3)
   );
 
   /* Shadow
@@ -590,7 +590,7 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
 }
 /* Create disabled state for the 1st time since icon doesn't have disabled state. */
 :host([data-render-mode="shadow"]) [part~='button-icon']:disabled {
-  --slds-c-icon-color-foreground: var(--slds-g-color-disabled-1);
+  --kdds-c-icon-color-foreground: var(--kdds-g-color-disabled-1);
   --sds-c-button-color-background-disabled: transparent;
 }
 /**
@@ -610,10 +610,10 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
 :host([data-render-mode="shadow"][variant='bare']) [part~='button-icon'] {
   --sds-c-button-sizing-height: auto;
   --sds-c-button-sizing-width: auto;
-  --slds-c-button-neutral-color-border: transparent;
-  --slds-c-button-neutral-color-border-hover: transparent;
-  --slds-c-button-neutral-color-border-focus: transparent;
-  --slds-c-button-neutral-color-border-active: var(--slds-g-color-border-accent-3);
+  --kdds-c-button-neutral-color-border: transparent;
+  --kdds-c-button-neutral-color-border-hover: transparent;
+  --kdds-c-button-neutral-color-border-focus: transparent;
+  --kdds-c-button-neutral-color-border-active: var(--kdds-g-color-border-accent-3);
 
   /* Disabled */
   --sds-c-button-color-background-disabled: transparent;
@@ -623,10 +623,10 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
   * Variant - Container
   */
 :host([data-render-mode="shadow"][variant='container']) [part~='button-icon'] {
-  --slds-c-button-neutral-color-border: transparent;
-  --slds-c-button-neutral-color-border-hover: transparent;
-  --slds-c-button-neutral-color-border-focus: transparent;
-  --slds-c-button-neutral-color-border-active: var(--slds-g-color-border-accent-3);
+  --kdds-c-button-neutral-color-border: transparent;
+  --kdds-c-button-neutral-color-border-hover: transparent;
+  --kdds-c-button-neutral-color-border-focus: transparent;
+  --kdds-c-button-neutral-color-border-active: var(--kdds-g-color-border-accent-3);
 
   /* Disabled */
   --sds-c-button-color-background-disabled: transparent;
@@ -636,7 +636,7 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
   * Variant - Brand
   */
 :host([data-render-mode="shadow"][variant='brand']) [part~='button-icon'] {
-  --slds-c-icon-color-foreground: var(--slds-g-color-on-accent-1);
+  --kdds-c-icon-color-foreground: var(--kdds-g-color-on-accent-1);
 }
 /**
   * Variant - Bare Inverse
@@ -646,23 +646,23 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
   --sds-c-button-sizing-width: auto;
 
   /* Border */
-  --slds-c-button-neutral-color-border: transparent;
-  --slds-c-button-neutral-color-border-hover: transparent;
-  --slds-c-button-neutral-color-border-focus: var(--slds-g-color-neutral-base-100);
-  --slds-c-button-neutral-color-border-active: var(--slds-g-color-neutral-base-100);
+  --kdds-c-button-neutral-color-border: transparent;
+  --kdds-c-button-neutral-color-border-hover: transparent;
+  --kdds-c-button-neutral-color-border-focus: var(--kdds-g-color-neutral-base-100);
+  --kdds-c-button-neutral-color-border-active: var(--kdds-g-color-neutral-base-100);
 
   /* Shadow */
-  --sds-c-button-shadow-focus: 0 0 3px var(--slds-g-color-neutral-base-100);
+  --sds-c-button-shadow-focus: 0 0 3px var(--kdds-g-color-neutral-base-100);
 
   /* Icon */
-  --slds-c-buttonicon-color-foreground: var(--slds-g-color-neutral-base-100);
-  --slds-c-buttonicon-color-foreground-hover: color-mix(
+  --kdds-c-buttonicon-color-foreground: var(--kdds-g-color-neutral-base-100);
+  --kdds-c-buttonicon-color-foreground-hover: color-mix(
     in oklab,
-    var(--slds-g-color-on-surface-inverse-1),
+    var(--kdds-g-color-on-surface-inverse-1),
     transparent 25%
   );
-  --slds-c-buttonicon-color-foreground-focus: var(--slds-g-color-neutral-base-95);
-  --slds-c-buttonicon-color-foreground-active: var(--slds-g-color-neutral-base-90);
+  --kdds-c-buttonicon-color-foreground-focus: var(--kdds-g-color-neutral-base-95);
+  --kdds-c-buttonicon-color-foreground-active: var(--kdds-g-color-neutral-base-90);
 
   /* Disabled */
   --sds-c-button-color-background-disabled: transparent;
@@ -673,35 +673,35 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
   */
 :host([data-render-mode="shadow"][variant='border-inverse']) [part~='button-icon'] {
   /* Border */
-  --slds-c-button-neutral-color-border: var(--slds-g-color-neutral-base-100);
-  --slds-c-button-neutral-color-border-hover: var(--slds-g-color-neutral-base-100);
-  --slds-c-button-neutral-color-border-focus: var(--slds-g-color-neutral-base-100);
-  --slds-c-button-neutral-color-border-active: var(--slds-g-color-neutral-base-100);
+  --kdds-c-button-neutral-color-border: var(--kdds-g-color-neutral-base-100);
+  --kdds-c-button-neutral-color-border-hover: var(--kdds-g-color-neutral-base-100);
+  --kdds-c-button-neutral-color-border-focus: var(--kdds-g-color-neutral-base-100);
+  --kdds-c-button-neutral-color-border-active: var(--kdds-g-color-neutral-base-100);
 
   /* Shadow */
-  --sds-c-button-shadow-focus: 0 0 3px var(--slds-g-color-neutral-base-100);
+  --sds-c-button-shadow-focus: 0 0 3px var(--kdds-g-color-neutral-base-100);
 
   /* Icon */
-  --slds-c-buttonicon-color-foreground: var(--slds-g-color-neutral-base-100);
-  --slds-c-buttonicon-color-foreground-hover: var(--slds-g-color-neutral-base-95);
-  --slds-c-buttonicon-color-foreground-focus: var(--slds-g-color-neutral-base-95);
-  --slds-c-buttonicon-color-foreground-active: var(--slds-g-color-neutral-base-90);
+  --kdds-c-buttonicon-color-foreground: var(--kdds-g-color-neutral-base-100);
+  --kdds-c-buttonicon-color-foreground-hover: var(--kdds-g-color-neutral-base-95);
+  --kdds-c-buttonicon-color-foreground-focus: var(--kdds-g-color-neutral-base-95);
+  --kdds-c-buttonicon-color-foreground-active: var(--kdds-g-color-neutral-base-90);
 
   /* Disabled */
   --sds-c-button-color-background-disabled: transparent;
-  --sds-c-button-color-border-disabled: var(--slds-g-color-border-disabled-2);
+  --sds-c-button-color-border-disabled: var(--kdds-g-color-border-disabled-2);
 }
 /**
   * Variant - Border Filled
   */
 :host([data-render-mode="shadow"][variant='border-filled']) [part~='button-icon'] {
-  --slds-c-button-neutral-color-background: var(--slds-g-color-surface-container-1);
-  --slds-c-button-neutral-color-background-hover: var(--slds-g-color-surface-container-1);
-  --slds-c-button-neutral-color-background-focus: var(--slds-g-color-surface-container-1);
-  --slds-c-button-neutral-color-background-active: var(--slds-g-color-surface-container-1);
+  --kdds-c-button-neutral-color-background: var(--kdds-g-color-surface-container-1);
+  --kdds-c-button-neutral-color-background-hover: var(--kdds-g-color-surface-container-1);
+  --kdds-c-button-neutral-color-background-focus: var(--kdds-g-color-surface-container-1);
+  --kdds-c-button-neutral-color-background-active: var(--kdds-g-color-surface-container-1);
 }
 :host([data-render-mode="shadow"][variant='border-filled']) [part~='button-icon']:disabled {
-  --sds-c-button-color-background-disabled: var(--slds-g-color-disabled-container-1);
+  --sds-c-button-color-background-disabled: var(--kdds-g-color-disabled-container-1);
 }
 /**
   * Sizes
@@ -709,33 +709,33 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
   * Sizes are restricted to specific variants.
   */
 :host([data-render-mode="shadow"][size='xx-small']) [part~='button-icon'] {
-  --sds-c-button-sizing-height: var(--slds-g-sizing-5);
-  --sds-c-button-sizing-width: var(--slds-g-sizing-5);
-  --slds-c-icon-sizing: var(--slds-g-sizing-3);
+  --sds-c-button-sizing-height: var(--kdds-g-sizing-5);
+  --sds-c-button-sizing-width: var(--kdds-g-sizing-5);
+  --kdds-c-icon-sizing: var(--kdds-g-sizing-3);
 }
 :host([data-render-mode="shadow"][size='x-small']) [part~='button-icon'] {
-  --sds-c-button-sizing-height: var(--slds-g-sizing-6);
-  --sds-c-button-sizing-width: var(--slds-g-sizing-6);
-  --slds-c-icon-sizing: var(--slds-g-sizing-4);
+  --sds-c-button-sizing-height: var(--kdds-g-sizing-6);
+  --sds-c-button-sizing-width: var(--kdds-g-sizing-6);
+  --kdds-c-icon-sizing: var(--kdds-g-sizing-4);
 }
 :host([data-render-mode="shadow"][size='small']) [part~='button-icon'] {
-  --sds-c-button-sizing-height: var(--slds-g-sizing-7);
-  --sds-c-button-sizing-width: var(--slds-g-sizing-7);
+  --sds-c-button-sizing-height: var(--kdds-g-sizing-7);
+  --sds-c-button-sizing-width: var(--kdds-g-sizing-7);
 }
 :host([data-render-mode="shadow"][size='large']) [part~='button-icon'] {
-  --sds-c-button-sizing-height: var(--slds-g-sizing-10);
-  --sds-c-button-sizing-width: var(--slds-g-sizing-10);
-  --slds-c-icon-sizing: var(--slds-g-sizing-7);
+  --sds-c-button-sizing-height: var(--kdds-g-sizing-10);
+  --sds-c-button-sizing-width: var(--kdds-g-sizing-10);
+  --kdds-c-icon-sizing: var(--kdds-g-sizing-7);
 }
 :host([data-render-mode="shadow"][size='x-small'][variant='bare']) [part~='button-icon'] {
-  --slds-c-buttonicon-spacing-block: 0;
-  --slds-c-buttonicon-spacing-inline: 0;
-  --slds-c-icon-sizing: var(--slds-g-sizing-3);
+  --kdds-c-buttonicon-spacing-block: 0;
+  --kdds-c-buttonicon-spacing-inline: 0;
+  --kdds-c-icon-sizing: var(--kdds-g-sizing-3);
 }
 :host([data-render-mode="shadow"][size='small'][variant='bare']) [part~='button-icon'] {
-  --slds-c-buttonicon-spacing-block: 0;
-  --slds-c-buttonicon-spacing-inline: 0;
-  --slds-c-icon-sizing: var(--slds-g-sizing-4);
+  --kdds-c-buttonicon-spacing-block: 0;
+  --kdds-c-buttonicon-spacing-inline: 0;
+  --kdds-c-icon-sizing: var(--kdds-g-sizing-4);
 }
 :host([data-render-mode="shadow"][size='large'][variant='bare']) [part~='button-icon'],:host([data-render-mode="shadow"][size='large'][variant='bare-inverse']) [part~='button-icon'] {
   --sds-c-button-sizing-height: auto;
@@ -754,7 +754,7 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
   * outcome is the removal of this class and replacing the class with the SLDS
   * utility package solution.
   */
-:host([data-render-mode="shadow"]) .slds-assistive-text {
+:host([data-render-mode="shadow"]) .kdds-assistive-text {
   position: absolute !important;
   margin: -1px !important;
   border: 0 !important;
@@ -767,5 +767,5 @@ Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
   white-space: nowrap !important;
 }
 :host([data-render-mode="shadow"][size='large']) [part~='button-icon'],:host([data-render-mode="shadow"][size='medium']) [part~='button-icon'] {
-  height: var(--slds-c-buttonicon-sizing-height, var(--slds-g-sizing-9));
+  height: var(--kdds-c-buttonicon-sizing-height, var(--kdds-g-sizing-9));
 }

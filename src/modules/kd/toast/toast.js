@@ -23,15 +23,15 @@ import { ShowToastEvent } from 'lightning/showToastEvent';
 import { LightningResizeObserver } from 'lightning/resizeObserver';
 import ToastContainer from 'lightning/toastContainer';
 
-import formFactorPropertyName from '@salesforce/client/formFactor';
+import formFactorPropertyName from '../../../../scopedImports/@salesforce-client-formFactor.js';
 
-import closeButtonTitleText from '@salesforce/label/LightningToast.close';
-import iconInfoAltText from '@salesforce/label/LightningToast.infoLabel';
-import iconWarningAltText from '@salesforce/label/LightningToast.warningLabel';
-import iconSuccessAltText from '@salesforce/label/LightningToast.successLabel';
-import iconErrorAltText from '@salesforce/label/LightningToast.errorLabel';
-import macNavigationAssistiveText from '@salesforce/label/LightningToast.macNavigationAssistiveText';
-import genericNavigationAssistiveText from '@salesforce/label/LightningToast.genericNavigationAssistiveText';
+import closeButtonTitleText from '../../../../scopedImports/@salesforce-label-LightningToast.close.js';
+import iconInfoAltText from '../../../../scopedImports/@salesforce-label-LightningToast.infoLabel.js';
+import iconWarningAltText from '../../../../scopedImports/@salesforce-label-LightningToast.warningLabel.js';
+import iconSuccessAltText from '../../../../scopedImports/@salesforce-label-LightningToast.successLabel.js';
+import iconErrorAltText from '../../../../scopedImports/@salesforce-label-LightningToast.errorLabel.js';
+import macNavigationAssistiveText from '../../../../scopedImports/@salesforce-label-LightningToast.macNavigationAssistiveText.js';
+import genericNavigationAssistiveText from '../../../../scopedImports/@salesforce-label-LightningToast.genericNavigationAssistiveText.js';
 
 import { getCurrentRegionAttributeName } from 'lightning/f6Controller';
 
@@ -210,18 +210,18 @@ export default class Toast extends LightningShadowBaseClass {
      */
     get toastClass() {
         return classSet(
-            `slds-notify slds-notify_toast fix-notify_toast_animation slds-theme_${this._variant}`
+            `kdds-notify kdds-notify_toast fix-notify_toast_animation kdds-theme_${this._variant}`
         )
             .add({
                 closing: this.closing,
-                'slds-hide': this.hide,
-                'fix-slds-notify--mobile': this.isSmallerBrowserWidth,
+                'kdds-hide': this.hide,
+                'fix-kdds-notify--mobile': this.isSmallerBrowserWidth,
             })
             .toString();
     }
 
     get toastElement() {
-        return this.template.querySelector('.slds-notify_toast');
+        return this.template.querySelector('.kdds-notify_toast');
     }
 
     /**
@@ -250,10 +250,10 @@ export default class Toast extends LightningShadowBaseClass {
         // In mobile devices, the component is designed to its width and height to be larger than its icon size to
         // accomodate tapping with finger instead of the more precise mouse cursor.
         // Due to the lightning-button-icon size differences between desktop and mobile devices, the final position of the close button is different.
-        // We need to shift the position of the close button back to the right place by adding `fix-slds-notify--mobile__close` class when it is
+        // We need to shift the position of the close button back to the right place by adding `fix-kdds-notify--mobile__close` class when it is
         // shown in a mobile device.
-        return classSet('slds-notify__close').add({
-            'fix-slds-notify--mobile__close': this._isSmallFormFactor,
+        return classSet('kdds-notify__close').add({
+            'fix-kdds-notify--mobile__close': this._isSmallFormFactor,
         });
     }
 

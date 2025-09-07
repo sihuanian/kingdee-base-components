@@ -7,31 +7,31 @@ import { normalizeString } from '../utilsPrivate/utilsPrivate'
 import { classSet } from '../utils/utils'
 
 const HALIN_CLASS = {
-    center: 'slds-grid_align-center',
-    space: 'slds-grid_align-space',
-    spread: 'slds-grid_align-spread',
-    end: 'slds-grid_align-end',
+    center: 'kdds-grid_align-center',
+    space: 'kdds-grid_align-space',
+    spread: 'kdds-grid_align-spread',
+    end: 'kdds-grid_align-end',
 };
 
 const VALIN_CLASS = {
-    start: 'slds-grid_vertical-align-start',
-    center: 'slds-grid_vertical-align-center',
-    end: 'slds-grid_vertical-align-end',
-    stretch: 'slds-grid_vertical-stretch',
+    start: 'kdds-grid_vertical-align-start',
+    center: 'kdds-grid_vertical-align-center',
+    end: 'kdds-grid_vertical-align-end',
+    stretch: 'kdds-grid_vertical-stretch',
 };
 
 const BOUNDARY_CLASS = {
-    small: 'slds-grid_pull-padded',
-    medium: 'slds-grid_pull-padded-medium',
-    large: 'slds-grid_pull-padded-large',
+    small: 'kdds-grid_pull-padded',
+    medium: 'kdds-grid_pull-padded-medium',
+    large: 'kdds-grid_pull-padded-large',
 };
 
 export const VERTICAL_ALIGN = Object.keys(VALIN_CLASS);
 export const BOUNDARY = Object.keys(BOUNDARY_CLASS);
 export const HORIZONTAL_ALIGN = Object.keys(HALIN_CLASS);
 
-const ROWS_CLASS = 'slds-wrap';
-const GRID_CLASS = 'slds-grid';
+const ROWS_CLASS = 'kdds-wrap';
+const GRID_CLASS = 'kdds-grid';
 
 export function normalizeParam(value, valid, fallback) {
     value = value ? value.toLowerCase() : ' ';
